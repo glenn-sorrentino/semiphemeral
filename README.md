@@ -6,3 +6,5 @@ Semiphemeral protects your privacy by making it easy for you to automatically de
 
 https://scidsg.github.io/semiphemeral-staging/<br>
 https://semiphemeral.com
+
+![readme](https://user-images.githubusercontent.com/114260051/209578695-639b26b4-9d76-4289-abd8-0cb5e896ac84.png)
