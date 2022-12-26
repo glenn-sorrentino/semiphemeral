@@ -1,0 +1,143 @@
+@media (prefers-color-scheme: light) {
+  .intro {
+    background-color: var(--color-light);
+    background: radial-gradient(70.54% 70.54% at 50% 100%, rgba(75, 53, 150, 0.21) 0%, rgba(75, 53, 150, 0) 100%), rgba(155, 81, 224, 0.07);
+  }
+
+  .intro h2 {
+    color: #9B51E0;
+  }
+
+  .intro.secondaryNav {
+    border-bottom: var(--border-dark);
+  }
+
+  p.hint {
+    color: var(--color-label-lm);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .intro {
+    background-color: var(--color-shade-dm);
+  }
+
+  .intro.secondaryNav {
+    border-bottom: var(--border-light);
+  }
+
+  p.hint {
+    color: var(--color-label-dm);
+  }
+}
+
+.intro {
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.intro .wrapper {
+  align-items: center;
+  text-align: center;
+  margin-bottom: calc(var(--spacing-xlarge) * 2);
+}
+
+.intro img {
+  max-width: 768px;
+  position: absolute;
+  top: 515px;
+}
+
+.intro h2 {
+  width: 65%;
+  line-height: var(--line-height-intro-heading);
+}
+
+.intro p + .primaryBtn {
+  margin-top: var(--spacing-medium);
+}
+
+.intro .tabs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0 !important;
+  margin: 0 auto;
+  padding: 0;
+  transition: .3s;
+}
+
+.intro p:last-of-type {
+  margin-bottom: 0;
+}
+
+.intro .toggleContainer {
+  margin-bottom: 0;
+}
+
+.secondaryIntro {
+  height: 80vh;
+}
+
+.secondaryIntro + section h3 {
+  margin-top: var(--spacing-medium) !important;
+}
+
+.secondaryIntro + article h3:first-of-type {
+  margin-top: 0 !important;
+}
+
+.secondaryIntro + article .highlights h3 {
+  margin-top: 0 !important;
+}
+
+p.hint {
+  position: absolute;
+  bottom: var(--spacing-base);
+  margin-bottom: 0 !important;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: var(--font-size-xsmall) !important;
+  font-weight: bold;
+  animation: floating 3s ease infinite;
+  max-width: max-content !important;
+  transition: .3s;
+}
+
+p.hint a {
+  text-decoration: none;
+}
+
+.fade {
+  opacity: 0 !important;
+}
+
+@media only screen and (max-width: 1280px) {
+  .intro .tabs {
+    padding: 0 var(--spacing-base);
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .intro h2 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro h2 {
+    width: 100%;
+  }
+
+  .intro .tabs {
+    padding: 0 var(--spacing-small);
+  }
+
+  .intro img {
+    top: 550px;
+  }
+}
