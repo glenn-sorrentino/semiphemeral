@@ -30,8 +30,7 @@
 @media (prefers-color-scheme: dark) {
   .btn {
     border: var(--border-light);
-    border-width: 2px;
-    border-color: var(--color-light);
+    border: 2px solid white !important;
     color: var(--color-light);
     background-color: var(--color-shade-dm);
   }
